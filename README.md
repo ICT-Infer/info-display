@@ -31,8 +31,8 @@ known as Iceweasel.
 
 ```bash
 sudo apt-get update && \
-sudo apt-get upgrade && \
-sudo apt-get install iceweasel
+sudo apt-get -y upgrade && \
+sudo apt-get -y install iceweasel
 ```
 
 Now from your main or managment computer, do `ssh-copy-id` to the Pi,
