@@ -77,7 +77,7 @@ vi ~/.config/lxsession/LXDE-pi/autostart
 Install crontab, edit the crontab according to your needs and then reboot.
 
 ```bash
-tail -n4 info-display/var/spool/cron/crontabs/pi | crontab -
+tail -n5 info-display/var/spool/cron/crontabs/pi | crontab -
 crontab -e
 sudo reboot
 ```
