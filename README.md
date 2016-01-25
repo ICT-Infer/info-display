@@ -27,12 +27,12 @@ The Raspberry Pi will then reboot.
 Once the Pi has rebooted and you're back at the desktop,
 open a terminal, update package index, install newest versions
 of packages and then install the Debian fork of Mozilla Firefox
-known as Iceweasel.
+known as Iceweasel. Install `unclutter` to auto-hide the cursor.
 
 ```bash
 sudo apt-get update && \
 sudo apt-get -y upgrade && \
-sudo apt-get -y install iceweasel
+sudo apt-get -y install iceweasel unclutter
 ```
 
 Now from your main or managment computer, do `ssh-copy-id` to the Pi,
