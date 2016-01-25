@@ -1,6 +1,6 @@
 # info-display
 
-Configuration for [Raspbian](https://www.raspbian.org/) GNU/Linux 8 ("jessie")
+Configuration for [Raspbian](https://www.raspbian.org/) GNU/Linux 8 ("Jessie")
 running on Raspberry Pi Model B to display information during certain hours
 of the day.
 
@@ -9,8 +9,9 @@ is an excellent base on which to build low cost, energy efficient,
 display solutions for public service announcement, product information,
 advertisement and similar purposes.
 
-To get started, put a fresh image of Raspbian on an SD-card, insert that
-into your Raspberry Pi Model B and power on your Pi.
+To get started, put
+[a fresh image of Jessie](https://www.raspberrypi.org/downloads/raspbian/)
+on an SD-card, insert that into your Raspberry Pi Model B and power on your Pi.
 
 At the desktop, open a terminal and then resize the SD card
 using the `raspi-config` tool.
