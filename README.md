@@ -13,16 +13,24 @@ To get started, put
 [a fresh image of Jessie](https://www.raspberrypi.org/downloads/raspbian/)
 on an SD-card, insert that into your Raspberry Pi Model B and power on your Pi.
 
-At the desktop, open a terminal and then resize the SD card
-using the `raspi-config` tool.
+At the desktop, open a terminal and then set locale, timezone,
+and expand the filesystem to the capacity of your SD card,
+all using the `raspi-config` tool.
 
 ```bash
 sudo raspi-config
 ```
 
-Select Expand Filesystem, tell it Ok, then Finish.
-When asked whether or not to reboot, select yes.
-The Raspberry Pi will then reboot.
+Select locale via *Internationalisation Options* and then *Change Locale*.
+Select generation of *en_US.UTF-8* and then set the default locale
+to *en_US.UTF-8*.
+
+To set timezone, select *Internationalisation Options*
+and then *Change Timezone*. Select the appropriate
+geographic area and city or region.
+
+With that done, select *Expand Filesystem*, tell it *Ok*, then *Finish*.
+When asked whether or not to reboot, select yes. The Pi will then reboot.
 
 Once the Pi has rebooted and you're back at the desktop,
 open a terminal, update package index, install newest versions
