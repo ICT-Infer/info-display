@@ -35,6 +35,13 @@ sudo apt-get -y upgrade && \
 sudo apt-get -y install iceweasel unclutter
 ```
 
+Disable screen blanking.
+
+```bash
+sudo sed -i "s/^#xserver-command=X$/xserver-command=X -s 0 dpms/" \
+  /etc/lightdm/lightdm.conf
+```
+
 Now from your main or managment computer, do `ssh-copy-id` to the Pi,
 verify that you are able to log in over SSH using public key authentication,
 then disable password login over SSH on the Pi.
