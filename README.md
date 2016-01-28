@@ -46,7 +46,7 @@ sudo apt-get -y install iceweasel unclutter
 Disable screen blanking.
 
 ```bash
-sudo sed -i "s/^#xserver-command=X$/xserver-command=X -s 0 dpms/" \
+sudo sed -i "s/^#\(xserver-command=X\)$/\1 -s 0 dpms/" \
   /etc/lightdm/lightdm.conf
 ```
 
