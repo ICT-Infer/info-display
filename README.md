@@ -57,7 +57,7 @@ then disable password login over SSH on the Pi.
 Next, clone this repository in the home directory of the pi user.
 
 ```bash
-git clone https://github.com/en90/info-display.git
+git clone https://github.com/eriknstr/info-display.git
 ```
 
 Copy config files.
